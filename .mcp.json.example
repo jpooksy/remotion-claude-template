@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "your-server": {
+      "type": "http",
+      "url": "https://api.example.com/mcp/http",
+      "headers": {
+        "Authorization": "PASTE_API_KEY_HERE"
+      }
+    }
+  }
+}
