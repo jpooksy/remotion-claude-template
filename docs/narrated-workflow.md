@@ -11,7 +11,7 @@ audio — never the other way around.
 - Author `drafts/videos/{slug}/script.md`: section-by-section narration
   (HOOK / feature beats / OUTRO) with a "visual anchors" list per section
   mapping spoken phrases to on-screen events.
-- Derive `script-teleprompter.md`: the narration as clean prose only — no
+- Derive `script-recording.md`: the narration as clean prose only — no
   frame numbers, no anchors — for reading aloud.
 - Budget ~150 words per minute of target runtime. Check the script against
   `drafts/_writing-rules.md` before recording.
@@ -37,7 +37,7 @@ constants-only change.
 
 ## 3. Record
 
-- Record a 16:9 face crop (1280×720 is plenty) reading the teleprompter
+- Record a 16:9 face crop (1280×720 is plenty) reading the recording
   script. One continuous take reads far better than stitched takes.
 - Save the file into `public/` (e.g. `public/talking-head.mp4`) and export a
   transcript or SRT with timestamps.

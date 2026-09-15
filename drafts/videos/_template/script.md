@@ -2,7 +2,7 @@
 
 > Narration with visual anchors, section by section. Check against
 > `drafts/_writing-rules.md` before recording. A clean prose-only copy goes
-> in `script-teleprompter.md` for reading aloud.
+> in `script-recording.md` for reading aloud.
 > Budget ~150 words per minute of target runtime.
 
 ## HOOK (frames 0–N)

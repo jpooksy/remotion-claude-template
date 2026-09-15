@@ -278,7 +278,7 @@ These are the levels for **silent cuts**. For narrated cuts (voice on top), use 
 
 ## Narrated Cuts (talking-head speaker overlay)
 
-For videos narrated by a recorded speaker: build the silent cut to a draft timeline, record against the teleprompter script, then re-time the composition to the recording via a `sync-map.md` cue table (audio is the source of truth). The overlay component is `src/components/TalkingHead.tsx` (pop-in, dodge-path keyframes, end fade; footage audio carries the voice at 1.0). Full recipe: `docs/narrated-workflow.md`.
+For videos narrated by a recorded speaker: build the silent cut to a draft timeline, record against the clean-prose recording script, then re-time the composition to the recording via a `sync-map.md` cue table (audio is the source of truth). The overlay component is `src/components/TalkingHead.tsx` (pop-in, dodge-path keyframes, end fade; footage audio carries the voice at 1.0). Full recipe: `docs/narrated-workflow.md`.
 
 ## Agents
 

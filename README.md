@@ -52,7 +52,7 @@ npx remotion still Example out/check.png --frame=60
 
 3. **Plan the video.** Write a brief (who it's for, what's in it, the steps shown, the value/outcome) and an outline (per-screen plan, every click's frame and coordinates derived at plan time) — plus a narration script if it's a narrated cut. Templates in `drafts/videos/_template/`.
 
-4. **Record and sync.** Read the teleprompter script on camera, then re-time the composition to your recording via a `sync-map.md` cue table — the audio becomes the source of truth, and every visual beat lands on its spoken line. The speaker overlay is `src/components/TalkingHead.tsx`. Full recipe: [`docs/narrated-workflow.md`](docs/narrated-workflow.md).
+4. **Record and sync.** Read the script on camera in one continuous take, then re-time the composition to your recording via a `sync-map.md` cue table — the audio becomes the source of truth, and every visual beat lands on its spoken line. The speaker overlay is `src/components/TalkingHead.tsx`. Full recipe: [`docs/narrated-workflow.md`](docs/narrated-workflow.md).
 
 ---
 
