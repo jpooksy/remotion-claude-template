@@ -19,6 +19,8 @@ npx tsc --noEmit
 npx remotion render Example out/example.mp4
 ```
 
+**Session setup (for Claude):** on a fresh clone, handle the setup for the user — if `node_modules/` is missing, run `npm install`; when the user wants to see a composition, launch `npx remotion studio` for them (background it and share the localhost URL). Don't make the user remember these commands.
+
 ## Project Structure
 
 ```
@@ -120,6 +122,10 @@ Icon components live in `src/icons/` (create this as you extract icons). Use `sc
 4. **List/table content** uses diverse, realistic names — not values named after the feature being demoed
 5. **Reference the token constants** in `src/constants/colors.ts` for every color
 
+### Recreating desktop UI at vertical scale
+
+Desktop px values (14px labels, 56px headers) are illegibly small on a 1080×1920 frame. Don't inflate individual values — recreate the panel at its native px dimensions, then scale the whole panel wrapper (e.g. `transform: scale(2)`, `transformOrigin: "top left"`). This keeps every extracted value traceable to the ds-spec while staying legible.
+
 ## Dashboards (optional second source of truth)
 
 If your product renders dashboards from a shared component library (a runtime of `KpiCard`, `DataTable`, chart, `Select`, etc.), treat that library as a second source of truth the same way you treat the frontend repo: recreate each dashboard element as one of its canonical components, drive every color from your token constants, and keep chart configs JSON-serializable if your build pipeline strips function formatters. If you have no such library, build dashboards directly against your design-system spec.
@@ -136,9 +142,9 @@ Each short follows this pattern (see `example/` as the starting template):
 | `data.ts` | Default prop values |
 | `Composition.tsx` | All components: Hook, Screens, CTA, desktop wrapper, cursor |
 
-**Screen flow** (example): Hook → Dashboard → Settings → Form → Chat → Payoff → CTA. Use whatever screens your demo needs.
+**Screen flow** (typical for a mature walkthrough short): Hook → Dashboard → Settings → Form → Chat → Payoff → CTA. The shipped `example/` is deliberately minimal — a single screen — so use whatever screens your demo needs.
 
-**Key helpers** (duplicated per composition, self-contained):
+**Key helpers** — patterns to implement per composition as your video calls for them (keep them duplicated and self-contained per composition; the minimal `example/` doesn't include them):
 - `computeScreenTimings()` — converts duration props to `{ start, end }` ranges
 - `buildAppColors()` — maps props to an `AppColors` object
 - `getMouseState()` / `MOUSE_SEGMENTS` — cursor position + click animations
@@ -150,7 +156,7 @@ Each short follows this pattern (see `example/` as the starting template):
 Register new compositions in `src/Root.tsx`:
 - Import component, schema, default props
 - Add `<Composition>` inside the matching `<Folder>` block
-- Use `calculateMetadata` to compute `durationInFrames` from screen durations
+- Compute `durationInFrames` from screen durations — via `calculateMetadata` when duration derives from props, or a static exported total (like `example/`'s `EXAMPLE_TOTAL_FRAMES`) for fixed-duration compositions
 - Set FPS 30, dimensions per format (vertical 1080×1920 or landscape 1920×1080)
 
 ### Creating a new short
@@ -251,7 +257,7 @@ Keep brand logos in `public/`. Notes that recur:
 
 ## Hook & CTA
 
-- Use a `<DesktopWallpaper />` background (not flat color)
+- Use a desktop-wallpaper-style background, not flat color (build a small `DesktopWallpaper` component for your brand — the template doesn't ship one)
 - Show relevant logos (e.g., your product + the integration/subject)
 - Dashboard preview uses a browser-shell border: `border: 3px solid rgba(255,255,255,0.3)`
 - Prefer a live dashboard component over a static screenshot (enables animated bars/numbers)

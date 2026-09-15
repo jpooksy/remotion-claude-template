@@ -20,7 +20,7 @@ For each screen, read:
 1. The primary component for that screen (Vue/React/Svelte — whatever your app uses)
 2. Any child components referenced in the template
 3. The app's theme / CSS file that defines design tokens (color custom properties)
-4. The app's `tailwind.config.*` (custom Tailwind scale — note non-default sizes like `text-2sm`, etc.)
+4. The app's `tailwind.config.*` (custom Tailwind scale — note non-default sizes like `text-2sm`, etc.). Tailwind v4 / CSS-first apps may have no config file — in that case extract the scale from the CSS `@theme` block / custom-property definitions instead, and cross-check any class whose name doesn't obviously match its value
 5. The app's icon components for any icons used
 6. `src/constants/colors.ts` in this repo (existing design-token mappings)
 
@@ -52,7 +52,7 @@ Table of every color used (background, border, text, accent):
 
 | Property | Tailwind class | DS token (colors.ts) | Hex | Source |
 |---|---|---|---|---|
-| Card bg | `bg-surface` | DS_SURFACE.surface | #141414 | theme.css |
+| Card bg | `bg-surface` | DS_SURFACE.card | #141414 | theme.css |
 | ... | | | | |
 
 Flag any hex used in the source that is NOT already in `colors.ts` — those must be added.

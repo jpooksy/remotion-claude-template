@@ -23,7 +23,12 @@ Every click, derived at plan time (`frame = seconds × fps`):
 
 ## Audio beat plan
 
-| Frame | Event | Sample | Volume |
+Skip this section entirely if you have no licensed audio yet (silent is
+fine — see `public/audio/README.md`). Volumes below are **narrated-cut**
+levels; for silent cuts use CLAUDE.md's Audio Volume Guide (music 0.15,
+click 0.5–0.6).
+
+| Frame | Event | Sample | Volume (narrated) |
 |---|---|---|---|
 | | click | click.wav | 0.25 |
 | | typing | keyboard.wav | 0.22 |

@@ -16,7 +16,7 @@ Run the complete Remotion video creation workflow. 8 phases: SEED → PLAN → D
 ## Context loading (read once at start)
 
 1. **`CLAUDE.md`** (repo root) — Canonical patterns, design-system workflow, DS tokens, Tailwind→px table, animation patterns, audio volume guide
-2. **Project memory** (`~/.claude/projects/.../memory/`) — especially:
+2. **Project memory** (`~/.claude/projects/.../memory/`) — if present; a fresh clone has none (the critical rules below capture the essentials), and there are no retros yet until you ship your first video. When memory exists, load especially:
    - Design-system-as-sole-source-of-truth (every visual property traces to a real app component)
    - Brand color usage rules (third-party hex only in hook/outro brand name + dashboard semantic)
    - Cinematography defaults (zoom speeds, pan speeds, click timing, safe-zone targeting)

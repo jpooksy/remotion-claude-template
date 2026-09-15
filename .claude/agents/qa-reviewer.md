@@ -32,9 +32,9 @@ Report every error in the new composition's files. Unused imports (`TS6133`) cou
 ### 2. Registration check (blocker if fail)
 Verify the new composition is registered in `src/Root.tsx`:
 - `<Composition>` inside the matching `<Folder>` block
-- `calculateMetadata` wired up
+- `durationInFrames` correctly derived — either `calculateMetadata` (prop-driven duration) or a static exported total like the `Example` registration (fixed duration); both are valid
 - Correct `width`/`height`/`fps`
-- Default props imported from `./compositions/videos/{slug}/data.ts`
+- Default props imported from `./compositions/videos/{slug}/data.ts` (when the composition takes props)
 
 ### 3. DS token compliance (blocker if fail)
 Grep the new composition's `.ts`/`.tsx` files for hardcoded hex values:

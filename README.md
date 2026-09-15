@@ -50,7 +50,7 @@ npx remotion still Example out/check.png --frame=60
 
 2. **Connect your product's frontend repo.** Clone your app's UI repo as a sibling directory and tell the workflow where it lives. Claude reads your real components — Tailwind classes, design tokens, spacing, icons — and recreates screens in React with exact values. This is what makes video creation truly programmatic: no screen recording, no clipping, every frame reproducible and editable. *(No repo access? Start with screenshots for an MVP — but connect the repo long-term; screenshots can only be verified against, not extracted from.)*
 
-3. **Plan the video.** Write a brief (who it's for, what's in it, the steps shown, the value/outcome), an outline (per-screen plan, every click's frame and coordinates derived at plan time), and a script. Templates in `drafts/videos/_template/`.
+3. **Plan the video.** Write a brief (who it's for, what's in it, the steps shown, the value/outcome) and an outline (per-screen plan, every click's frame and coordinates derived at plan time) — plus a narration script if it's a narrated cut. Templates in `drafts/videos/_template/`.
 
 4. **Record and sync.** Read the teleprompter script on camera, then re-time the composition to your recording via a `sync-map.md` cue table — the audio becomes the source of truth, and every visual beat lands on its spoken line. The speaker overlay is `src/components/TalkingHead.tsx`. Full recipe: [`docs/narrated-workflow.md`](docs/narrated-workflow.md).
 

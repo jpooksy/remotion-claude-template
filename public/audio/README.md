@@ -1,5 +1,10 @@
 # Audio assets — bring your own
 
+**No audio yet? Ship silent.** Everything in this template works with zero
+audio files — just omit the `<Audio>` tags from your composition (the
+`example/` composition does exactly this). Add music/SFX later when you've
+licensed tracks; the volume conventions below apply from then on.
+
 Audio files are not bundled with this template because stock-music licenses
 (Adobe Stock, Artlist, Epidemic Sound, …) are per-account and don't permit
 redistribution in a public repo. Source and license your own tracks, then
