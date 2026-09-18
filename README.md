@@ -1,14 +1,14 @@
 # remotion-claude-template
 
-Make custom, high-quality product showcase videos **in code** — [Remotion](https://remotion.dev) compositions driven by a [Claude Code](https://claude.com/claude-code) agent workflow, instead of screen recordings stitched together in an editor.
+Make custom, high-quality product showcase videos **in code** - [Remotion](https://remotion.dev) compositions driven by a [Claude Code](https://claude.com/claude-code) agent workflow, instead of screen recordings stitched together in an editor.
 
-The core idea: recreate your product's UI pixel-for-pixel in React by treating **your app's own frontend repo (your design system) as the single source of truth**. A set of Claude Code agents and a `remotion-video` skill drive the workflow from planning through publish — including narrated cuts with a talking-head speaker overlay synced to your recording.
+The core idea: recreate your product's UI pixel-for-pixel in React by treating **your app's own frontend repo (your design system) as the single source of truth**. A set of Claude Code agents and a `remotion-video` skill drive the workflow from planning through publish - including narrated cuts with a talking-head speaker overlay synced to your recording.
 
 > 🎬 Video walkthrough of the full workflow: *coming soon*
 >
 > **Videos made with this workflow:**
-> - [Replace Your Data Stack with Claude Code](https://www.youtube.com/shorts/SPS0oO_ePC4) — vertical Short
-> - [Build & Manage Your Data Stack from Claude Code](https://www.youtube.com/watch?v=B1BODOkHUIU) — landscape long-form, narrated
+> - [Replace Your Data Stack with Claude Code](https://www.youtube.com/shorts/SPS0oO_ePC4) - vertical Short
+> - [Build & Manage Your Data Stack from Claude Code](https://www.youtube.com/watch?v=B1BODOkHUIU) - landscape long-form, narrated
 
 This is a template. Point it at your own product, drop your logos and audio into `public/`, fill `src/constants/` with your tokens, and start producing.
 
@@ -19,7 +19,7 @@ This is a template. Point it at your own product, drop your logos and audio into
 ### Prerequisites
 - Node.js v18+
 - npm
-- [Claude Code](https://claude.com/claude-code) (for the agent workflow — everything also works by hand)
+- [Claude Code](https://claude.com/claude-code) (for the agent workflow - everything also works by hand)
 
 ### Setup
 
@@ -46,13 +46,13 @@ npx remotion still Example out/check.png --frame=60
 
 ## The workflow in four steps
 
-1. **Set up Remotion with Claude Code.** Clone this repo and run `claude` from its root. `CLAUDE.md`, the `remotion-video` skill, and the agents in `.claude/agents/` give a fresh session everything it needs — the workflow, the conventions, and the pitfalls already learned.
+1. **Set up Remotion with Claude Code.** Clone this repo and run `claude` from its root. `CLAUDE.md`, the `remotion-video` skill, and the agents in `.claude/agents/` give a fresh session everything it needs - the workflow, the conventions, and the pitfalls already learned.
 
-2. **Connect your product's frontend repo.** Clone your app's UI repo as a sibling directory and tell the workflow where it lives. Claude reads your real components — Tailwind classes, design tokens, spacing, icons — and recreates screens in React with exact values. This is what makes video creation truly programmatic: no screen recording, no clipping, every frame reproducible and editable. *(No repo access? Start with screenshots for an MVP — but connect the repo long-term; screenshots can only be verified against, not extracted from.)*
+2. **Connect your product's frontend repo.** Clone your app's UI repo as a sibling directory and tell the workflow where it lives. Claude reads your real components - Tailwind classes, design tokens, spacing, icons - and recreates screens in React with exact values. This is what makes video creation truly programmatic: no screen recording, no clipping, every frame reproducible and editable. *(No repo access? Start with screenshots for an MVP - but connect the repo long-term; screenshots can only be verified against, not extracted from.)*
 
-3. **Plan the video.** Write a brief (who it's for, what's in it, the steps shown, the value/outcome) and an outline (per-screen plan, every click's frame and coordinates derived at plan time) — plus a narration script if it's a narrated cut. Templates in `drafts/videos/_template/`.
+3. **Plan the video.** Write a brief (who it's for, what's in it, the steps shown, the value/outcome) and an outline (per-screen plan, every click's frame and coordinates derived at plan time) - plus a narration script if it's a narrated cut. Templates in `drafts/videos/_template/`.
 
-4. **Record and sync.** Read the script on camera in one continuous take, then re-time the composition to your recording via a `sync-map.md` cue table — the audio becomes the source of truth, and every visual beat lands on its spoken line. The speaker overlay is `src/components/TalkingHead.tsx`. Full recipe: [`docs/narrated-workflow.md`](docs/narrated-workflow.md).
+4. **Record and sync.** Read the script on camera in one continuous take, then re-time the composition to your recording via a `sync-map.md` cue table - the audio becomes the source of truth, and every visual beat lands on its spoken line. The speaker overlay is `src/components/TalkingHead.tsx`. Full recipe: [`docs/narrated-workflow.md`](docs/narrated-workflow.md).
 
 ---
 
@@ -62,14 +62,14 @@ npx remotion still Example out/check.png --frame=60
 .
   package.json                             # Remotion project manifest
   remotion.config.ts                       # Codec, concurrency, Tailwind
-  CLAUDE.md                                # Agent context — conventions, patterns, rules
+  CLAUDE.md                                # Agent context - conventions, patterns, rules
   public/
-    audio/README.md                        # Expected audio layout (bring your own — see licensing note)
+    audio/README.md                        # Expected audio layout (bring your own - see licensing note)
     logos/                                 # Your brand + integration logos
   src/
     Root.tsx                               # Composition registry (all IDs)
     constants/
-      colors.ts                            # Design-system tokens (placeholder set — swap in yours)
+      colors.ts                            # Design-system tokens (placeholder set - swap in yours)
       fonts.ts                             # Font loading
     components/                            # Reusable building blocks
                                            #   Arrow, CategoryCard, FadeIn, GlowText,
@@ -86,7 +86,7 @@ npx remotion still Example out/check.png --frame=60
   docs/
     narrated-workflow.md                   # Record → sync-map → re-time → speaker overlay
   .claude/
-    skills/remotion-video/SKILL.md         # Canonical multi-phase workflow — start here
+    skills/remotion-video/SKILL.md         # Canonical multi-phase workflow - start here
     agents/
       design-system-extractor.md           # Extracts per-screen UI spec from your app's components
       composition-builder.md               # Builds the composition from ds-spec + brief
@@ -131,7 +131,7 @@ Your app's components drive UI-screen recreation via the `design-system-extracto
 
 ## Audio
 
-Music and SFX are **not** bundled — stock-music licenses are per-account and don't permit redistribution. See [`public/audio/README.md`](public/audio/README.md) for the expected file layout, volume conventions, and how to keep license proofs.
+Music and SFX are **not** bundled - stock-music licenses are per-account and don't permit redistribution. See [`public/audio/README.md`](public/audio/README.md) for the expected file layout, volume conventions, and how to keep license proofs.
 
 ## License
 
