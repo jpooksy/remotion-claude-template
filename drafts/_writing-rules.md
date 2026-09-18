@@ -16,6 +16,10 @@ These sound markety, generic, or aspirational without carrying information:
 - "supercharge," "unlock the power of"
 - "imagine if you could…" (any speculative framing)
 - "the future of [X]"
+- "this is the part that matters" / "and this is the one that matters" (any
+  self-important signposting — just say the thing; if it matters, the content
+  shows it)
+- "boilerplate"
 
 If the drafting agent uses any of these, replace with a concrete claim or cut entirely.
 
@@ -26,6 +30,31 @@ If the drafting agent uses any of these, replace with a concrete claim or cut en
 - **Contractions:** "I'm gonna," "you'll," "it's" — preferred over formal.
 - **Em-dashes are fine** but not every sentence — don't over-rely.
 - **Specifics over adjectives.** "67% true shooting" beats "really efficient." "Five-minute minimum interval" beats "fast scheduling."
+
+## AI-tell rhythms (flag these on sight)
+
+- **Asyndetic tricolons** — "beat, beat, beat" lists with no conjunction,
+  usually after an em-dash ("change a number, change a label, re-render").
+  Max one per script, and only when each item maps to a distinct on-screen
+  beat. Otherwise: add the conjunction, cut to two items, or replace the
+  rhythm with one specific fact.
+- **Signpost-then-deliver** ("Here's the key move:", "The part that
+  matters:") — occasionally fine, but never twice in one script; usually
+  just delete the signpost and move on.
+- **"No X" fragments (ad-copy block language)** — verbless negative
+  fragments: "No video production experience required." / "No contracts.
+  No hidden fees." The clipped syntax itself reads as marketing, whatever
+  the content. Fold it into a real sentence ("you don't need any video
+  production experience") or attach it to a concrete claim. One might
+  slide; two in a row is a tell.
+- **Em-dash pivots** ("claim — punchy elaboration") — fine in isolation,
+  but this is the delivery vehicle for most of the tells above; tricolons
+  and fragments usually arrive after a dash. If a paragraph has three or
+  more dashes, rewrite at least one of those sentences with plain syntax.
+
+The common thread: each of these imports a *form* whose feel outruns its
+content. Test: if the sentence sounds punchy but could be deleted without
+losing information, delete it.
 
 ## Section punchlines
 
