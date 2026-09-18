@@ -4,7 +4,15 @@ Make custom, high-quality product showcase videos **in code** - [Remotion](https
 
 The core idea: recreate your product's UI pixel-for-pixel in React by treating **your app's own frontend repo (your design system) as the single source of truth**. A set of Claude Code agents and a `remotion-video` skill drive the workflow from planning through publish - including narrated cuts with a talking-head speaker overlay synced to your recording.
 
-> [![Watch the video](https://youtube.com)](https://www.youtube.com/watch?v=gEtm-MJKJoA)
+## Watch the walkthrough
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=gEtm-MJKJoA">
+    <img src="https://img.youtube.com/vi/gEtm-MJKJoA/maxresdefault.jpg" alt="How I Make SaaS Product Demos in Code" width="640">
+  </a>
+</p>
+
+**Videos made with this workflow:**
 > **Videos made with this workflow:**
 > - [Replace Your Data Stack with Claude Code](https://www.youtube.com/shorts/SPS0oO_ePC4) - vertical Short
 > - [Build & Manage Your Data Stack from Claude Code](https://www.youtube.com/watch?v=B1BODOkHUIU) - landscape long-form, narrated
