@@ -12,7 +12,6 @@ The core idea: recreate your product's UI pixel-for-pixel in React by treating *
   </a>
 </p>
 
-**Videos made with this workflow:**
 > **Videos made with this workflow:**
 > - [Replace Your Data Stack with Claude Code](https://www.youtube.com/shorts/SPS0oO_ePC4) - vertical Short
 > - [Build & Manage Your Data Stack from Claude Code](https://www.youtube.com/watch?v=B1BODOkHUIU) - landscape long-form, narrated
