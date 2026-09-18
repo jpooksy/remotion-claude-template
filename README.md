@@ -27,7 +27,7 @@ This is a template. Point it at your own product, drop your logos and audio into
 git clone https://github.com/jpooksy/remotion-claude-template.git
 cd remotion-claude-template
 npm install
-npx remotion studio       # Opens Remotion Studio at localhost:3000
+npx remotion studio       # Opens Remotion Studio at localhost:xxxx
 ```
 
 Studio lets you browse compositions in the sidebar, scrub the timeline, and preview any frame. `staticFile()` resolves assets relative to the repo-root `public/` directory.
